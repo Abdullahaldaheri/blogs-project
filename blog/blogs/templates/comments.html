@@ -1,0 +1,11 @@
+{% extends 'blog/landing.html' %}
+{% block content %}
+    <h1>Comments</h1>
+    <ul>
+        {% for comment in comments %}
+            <li>
+                Comment on Blog ID {{ comment.post.id }}: {{ comment.content }}
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

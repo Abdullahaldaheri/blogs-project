@@ -1,0 +1,9 @@
+{% extends 'blog/landing.html' %}
+{% block content %}
+    <h1>Users List</h1>
+    <ul>
+        {% for user in users %}
+            <li>{{ user.username }} ({{ user.email }})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

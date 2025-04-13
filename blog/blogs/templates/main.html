@@ -1,0 +1,8 @@
+{% extends 'blog/landing.html' %}
+{% block content %}
+    <h1>Welcome to the Blog Website</h1>
+    <p><a href="{% url 'users' %}">View All Users</a></p>
+    <p><a href="{% url 'blogs' %}">View All Blogs</a></p>
+    <p><a href="{% url 'comments' %}">View All Comments</a></p>
+    <p><a href="{% url 'categories' %}">View All Categories</a></p>
+{% endblock %}
